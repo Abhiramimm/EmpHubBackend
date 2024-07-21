@@ -1,0 +1,79 @@
+
+Schema : Employee
+
+Attributes :id,name,department,salary,location,email,address,phone,dateofjoin,picture
+
+Movie Endpoints
+===============
+
+    1) API for listing all employees
+
+        url:http://127.0.0.1:8000/api/employees/
+
+        method:GET
+
+        body:nill
+
+        Autorization:nill
+
+     2) API for adding a new  employee
+
+        url:http://127.0.0.1:8000/api/employees/
+
+        method:POST
+
+        body:{
+                name:employee_name,
+                department:employee_department,
+                salary:employee_salary,
+                location:employee_location,
+                email:employee_email,
+                address:employee_address,
+                phone:employee_phone,
+                dateofjoin:employee_dateofjoin,
+                picture:employee_picture
+            }
+
+        Autorization:nill
+
+     3) API for fetching   employee details
+
+        url:http://127.0.0.1:8000/api/employees/{id}/
+
+        method:GET
+
+        body:nill
+
+        Autorization:nill
+
+     4) API for editing a employee
+
+        url:http://127.0.0.1:8000/api/employees/{id}/
+
+        method:PUT
+
+        body:{
+                name:employee_name,
+                department:employee_department,
+                salary:employee_salary,
+                location:employee_location,
+                email:employee_email,
+                address:employee_address,
+                phone:employee_phone,
+                dateofjoin:employee_dateofjoin,
+                picture:employee_picture
+            }
+
+        Autorization:nill
+
+
+     5) API for delete employee details
+
+        url:http://127.0.0.1:8000/api/employees/{id}/
+
+        method:DELETE
+
+        body:nill
+
+        Autorization:nill
+
